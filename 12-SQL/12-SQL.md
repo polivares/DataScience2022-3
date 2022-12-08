@@ -130,7 +130,7 @@ Permite agrupar los datos resultantes de una query bajo un cierto criterio.
 Ejemplo:
 
 ```console
-sqlite> select nombre, COUNT(*) from Cliente group by nombre;
+sqlite> select nombre, count(*) from Cliente group by nombre;
 ```
 
 #### **Having**
@@ -139,7 +139,7 @@ Permite filtrar los datos obtenidos desde funciones agregadas (similar al where)
 Ejemplo:
 
 ```console
-sqlite> select nombre, COUNT(*) from Cliente group by nombre having run>33333333;
+sqlite> select nombre, count(*) from Cliente group by nombre having run>33333333;
 ```
 
 #### **Join**
